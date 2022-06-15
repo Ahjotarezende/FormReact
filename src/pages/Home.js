@@ -23,8 +23,7 @@ const Home = () => {
             
             <CheckBox id="Check" name="check" type="checkbox"/>
 
-            <Button/>
-            
+            <Button id="bt1"/>
         </Formulario>
     </Background>
   )

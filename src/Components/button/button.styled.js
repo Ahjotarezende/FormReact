@@ -6,7 +6,7 @@ const ContainerButton = styled.div`
     margin-top: 130px;
 `;
 
-const ButtonSucess = styled.button`
+const ButtonRegister = styled.button`
     background-color: #0DBDBD;
     color: white;
     font-family: 'Nunito', sans-serif;
@@ -18,4 +18,16 @@ const ButtonSucess = styled.button`
     cursor: pointer;
 `;
 
-export {ContainerButton, ButtonSucess}
+const ButtonSucess = styled.button`
+    background-color: #0DBDBD;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    width: 16.81rem;
+    height: 11.06rem;
+    font-size: 2.25rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+`;
+
+export {ContainerButton, ButtonRegister, ButtonSucess}
