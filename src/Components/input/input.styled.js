@@ -1,0 +1,60 @@
+import styled from 'styled-components';
+
+const getId = (id) => {
+    if(id==="Email"){
+        return`
+            grid-column: 1/2;
+        `;
+    }
+    if(id==="Phone"){
+        return`
+            grid-row: 2/3;
+            grid-column: 2/3;
+        `;
+    }
+    if(id==="Password"){
+        return`
+            margin-top: 31px;
+            grid-column: 1/2;
+        `;
+    }
+    if(id==="Age"){
+        return`
+            margin-top: 31px;
+            grid-column: 2/3;
+        `;
+    }
+}
+
+const Container = styled.div`
+    grid-column: 1/3;
+    ${({id}) => getId(id)}
+`;
+
+const Label = styled.label`
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.89rem;
+    color: #767676;
+    text-align: left;
+`;
+const InputField = styled.input`
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 2px solid #AAAAAA;
+    border-radius: 4px;
+    height: 5vh;
+    width: 100%;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem; 
+`;
+
+const ErrorMessage = styled.p`
+    text-align: left;
+    font-size: 0.89rem;
+    color: red;
+    margin: 7px 0 0 0;
+    padding-bottom: 1.2rem;
+`;
+
+export {Container, Label, InputField, ErrorMessage}
