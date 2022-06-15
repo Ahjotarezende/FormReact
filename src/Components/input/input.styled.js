@@ -4,10 +4,12 @@ const getId = (id) => {
     if(id==="Email"){
         return`
             grid-column: 1/2;
+            margin-top: 18px;
         `;
     }
     if(id==="Phone"){
         return`
+            margin-top: 17px;
             grid-row: 2/3;
             grid-column: 2/3;
         `;
@@ -39,11 +41,12 @@ const Label = styled.label`
     text-align: left;
 `;
 const InputField = styled.input`
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #AAAAAA;
     border-radius: 4px;
-    height: 5vh;
+    height: 2.5rem;
     width: 100%;
     padding-left: 0.8rem;
     padding-right: 0.8rem; 
@@ -54,7 +57,6 @@ const ErrorMessage = styled.p`
     font-size: 0.89rem;
     color: red;
     margin: 7px 0 0 0;
-    padding-bottom: 1.2rem;
 `;
 
 export {Container, Label, InputField, ErrorMessage}
