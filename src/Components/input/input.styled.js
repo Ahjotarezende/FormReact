@@ -1,26 +1,26 @@
 import styled from 'styled-components';
 
 const getId = (id) => {
-    if(id==="Email"){
+    if(id==="email"){
         return`
             grid-column: 1/2;
             margin-top: 18px;
         `;
     }
-    if(id==="Phone"){
+    if(id==="phone"){
         return`
             margin-top: 17px;
             grid-row: 2/3;
             grid-column: 2/3;
         `;
     }
-    if(id==="Password"){
+    if(id==="password"){
         return`
             margin-top: 31px;
             grid-column: 1/2;
         `;
     }
-    if(id==="Age"){
+    if(id==="age"){
         return`
             margin-top: 31px;
             grid-column: 2/3;
@@ -31,6 +31,7 @@ const getId = (id) => {
 const Container = styled.div`
     grid-column: 1/3;
     ${({id}) => getId(id)}
+    height: 5.6rem;
 `;
 
 const Label = styled.label`
@@ -53,6 +54,7 @@ const InputField = styled.input`
 `;
 
 const ErrorMessage = styled.p`
+    display: none;
     text-align: left;
     font-size: 0.89rem;
     color: red;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const ContainerButton = styled.div`
     grid-column: 2/3;
     justify-self: end;
-    margin-top: 137px;
+    margin-top: 130px;
 `;
 
 const ButtonSucess = styled.button`
