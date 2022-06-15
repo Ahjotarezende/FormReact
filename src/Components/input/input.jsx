@@ -1,8 +1,12 @@
 import React from 'react'
+import {Container, InputField, Label} from './input.styled'
 
-const Input = ({id, type, name}) => {
+const Input = ({id, type, placeholder, label}) => {
   return (
-    <input id={id} type={type} name={name}/>
+    <Container>
+      <Label htmlFor={id}>{label}</Label>
+      <InputField id={id} type={type} placeholder={placeholder}/>
+    </Container> 
   )
 }
 
