@@ -31,6 +31,7 @@ const getId = (id) => {
 const Container = styled.div`
     grid-column: 1/3;
     ${({id}) => getId(id)}
+    height: 5.6rem;
 `;
 
 const Label = styled.label`
@@ -53,6 +54,7 @@ const InputField = styled.input`
 `;
 
 const ErrorMessage = styled.p`
+    display: none;
     text-align: left;
     font-size: 0.89rem;
     color: red;
