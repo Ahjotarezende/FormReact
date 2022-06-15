@@ -9,8 +9,15 @@ const Home = () => {
         <Logo src={ImgLogo}/>
         <MainTitle>Intern Sign Up</MainTitle>
         <Formulario>
-            <Input id="name" type="text" placeholder="Name" label="Full Name *"/>
-            <ErrorMessage>Fullname Invalid</ErrorMessage>
+            <Input id="Fullname" type="text" placeholder="Name" label="Full Name *"/>
+
+            <Input id="Email" type="email" placeholder="foo@bar.com" label="Email *"/>
+
+            <Input id="Password" type="password" placeholder="Enter your password" label="Password*"/>
+
+            <Input id="Phone" type="tel" placeholder="(83) 00000-0000" label="Phone"/>
+
+            <Input id="Age" type="date" label="Birthday *"/>
         </Formulario>
     </Background>
   )
