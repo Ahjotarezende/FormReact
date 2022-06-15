@@ -9,6 +9,7 @@ export const Background = styled.div`
     border: none;
     border-radius: 20px;
     text-align: center;
+    padding-bottom: 64px;
 `;
 
 export const Logo = styled.img`
