@@ -1,7 +1,8 @@
 import React from 'react'
-import {Background, Formulario, Logo, MainTitle, ErrorMessage} from '../styles'
+import {Background, Formulario, Logo, MainTitle} from '../styles'
 import ImgLogo from '../assets/logo.png'
 import Input from '../Components/input/input'
+import Button from '../Components/button/button'
 
 const Home = () => {
   return (
@@ -18,6 +19,9 @@ const Home = () => {
             <Input id="Phone" type="tel" placeholder="(83) 00000-0000" label="Phone"/>
 
             <Input id="Age" type="date" label="Birthday *"/>
+
+            <Button/>
+            
         </Formulario>
     </Background>
   )
