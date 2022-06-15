@@ -5,11 +5,11 @@ export const Background = styled.div`
     background-color: white;
     width: 38.5rem;
     max-height: 763px;
-    margin: 2rem auto;
+    margin: 4rem auto;
     border: none;
     border-radius: 20px;
     text-align: center;
-    padding-bottom: 64px;
+    padding-bottom: 50px;
 `;
 
 export const Logo = styled.img`
@@ -25,6 +25,7 @@ export const Formulario = styled.form`
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(4, 0.25fr);
     column-gap: 24px;
     padding: 0 3.2rem;
 `;
