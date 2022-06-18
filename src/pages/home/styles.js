@@ -10,15 +10,27 @@ export const Background = styled.div`
     border-radius: 20px;
     text-align: center;
     padding-bottom: 50px;
+    @media screen and (max-width: 768px){
+        align-self: center;
+        height: 100vh;
+        margin: 0;
+        align-items: center;
+    }
 `;
 
 export const Logo = styled.img`
-    margin: 2.4rem auto 0 auto;
+    margin-top: 2.4rem;
     max-width: 213px;
+    @media screen and (max-width: 768px){
+        margin: 5.31rem auto 0 auto;
+    }
 `;
 
 export const MainTitle = styled.h1`
-    margin-bottom: 0.95rem;
+    margin-bottom: 1.81rem;
+    @media screen and (max-width: 768px){
+        margin-bottom: 2.5rem;
+    }
 `;
 
 export const Formulario = styled.form`
@@ -26,6 +38,12 @@ export const Formulario = styled.form`
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(4, 0.25fr);
-    column-gap: 24px;
+    column-gap: 1.5rem;
     padding: 0 3.2rem;
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 0.16fr);
+        column-gap: 0.8125rem;
+        padding: 0;
+    }
 `;

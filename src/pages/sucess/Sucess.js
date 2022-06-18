@@ -1,7 +1,7 @@
 import React from 'react'
-import {Background, Logo, MainTitle} from '../styleSucess'
-import ImgLogo from '../assets/logo.png'
-import Button from '../Components/button/button'
+import {Background, Logo, MainTitle} from './styleSucess'
+import ImgLogo from '../../assets/logo.png'
+import Button from '../../Components/button/button'
 
     const Sucess = () => {
         return(
