@@ -8,6 +8,12 @@ const ContainerCheck = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr;
     row-gap: 8px;
+    @media screen and (max-width: 768px){
+        grid-column: 1/3;
+        margin-top: 43px;
+        row-gap: 0;
+        height: 50px;
+    }
 `;
 const HiddenCheckbox = styled.input.attrs({type: 'checkbox'})`
     overflow: hidden;
@@ -41,7 +47,7 @@ const Check = styled.label`
 `;
 
 const TextError = styled.p`
-    display: none;
+    //display: none;
     grid-row: 2;
     grid-column: 1/3;
     text-align: left;

@@ -1,9 +1,9 @@
 import React from 'react'
-import {Background, Formulario, Logo, MainTitle} from '../styles'
-import ImgLogo from '../assets/logo.png'
-import Input from '../Components/input/input'
-import Button from '../Components/button/button'
-import CheckBox from '../Components/checkbox/checkbox'
+import {Background, Formulario, Logo, MainTitle} from './styles'
+import ImgLogo from '../../assets/logo.png'
+import Input from '../../Components/input/input'
+import Button from '../../Components/button/button'
+import CheckBox from '../../Components/checkbox/checkbox'
 
 const Home = () => {
   return (

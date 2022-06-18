@@ -1,11 +1,11 @@
 import React from "react";
-import Home from './pages/Home'
-import Sucess from './pages/Sucess'
+import Home from './pages/home/Home'
+import Sucess from './pages/sucess/Sucess'
 
 function App() {
   return (
-      <Home />,
-      <Sucess />
+      <Sucess />,
+      <Home />
   );
 }
 

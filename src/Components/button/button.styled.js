@@ -4,6 +4,12 @@ const ContainerButton = styled.div`
     grid-column: 2/3;
     justify-self: end;
     margin-top: 130px;
+
+    @media screen and (max-width: 768px){
+        grid-column: 1/3;
+        justify-self: center;
+        margin-top: 0;
+    }
 `;
 
 const ButtonRegister = styled.button`
@@ -16,6 +22,12 @@ const ButtonRegister = styled.button`
     border-radius: 10px;
     border: none;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+        width: 38.5rem;
+        height: 3.5rem;
+        margin-top: 25px;
+    }
 `;
 
 const ButtonSucess = styled.button`
@@ -28,6 +40,11 @@ const ButtonSucess = styled.button`
     border-radius: 10px;
     border: none;
     cursor: pointer;
+
+    @media screen and (max-width: 768px){
+        width: 20.43rem;
+        height: 4.68rem;
+    }
 `;
 
 export {ContainerButton, ButtonRegister, ButtonSucess}
