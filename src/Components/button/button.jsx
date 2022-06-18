@@ -11,9 +11,7 @@ const Button = (props) => {
     }
     else{
         return(
-            <ContainerButton>
-                <ButtonSucess onClick={props.onClick} >Go Back!</ButtonSucess>
-            </ContainerButton>
+            <ButtonSucess onClick={props.onClick} >Go Back!</ButtonSucess>
         )
     }
 }

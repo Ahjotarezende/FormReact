@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 const ContainerButton = styled.div`
     grid-column: 2/3;
-    justify-self: end;
     margin-top: 130px;
+    width:100%;
+    display: flex;
+    justify-content: end;
 
     @media screen and (max-width: 768px){
         grid-column: 1/3;
@@ -23,13 +25,14 @@ const ButtonRegister = styled.button`
     cursor: pointer;
 
     @media screen and (max-width: 768px){
-        width: 38.5rem;
+        width: 100%;
         height: 3.5rem;
         margin-top: 25px;
     }
 `;
 
 const ButtonSucess = styled.button`
+    align-self: center;
     background-color: #0DBDBD;
     color: white;
     font-family: 'Nunito', sans-serif;

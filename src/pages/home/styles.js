@@ -4,7 +4,7 @@ export const Background = styled.div`
     font-family: 'Nunito', sans-serif;
     background-color: white;
     width: 38.5rem;
-    max-height: 47.68rem;
+    max-height: 46.68rem;
     margin: 4rem auto;
     border: none;
     border-radius: 20px;
