@@ -7,8 +7,7 @@ const ContainerButton = styled.div`
 
     @media screen and (max-width: 768px){
         grid-column: 1/3;
-        justify-self: center;
-        margin-top: 0;
+        margin: 0 auto;
     }
 `;
 
