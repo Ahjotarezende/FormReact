@@ -6,6 +6,9 @@ const getId = (id) => {
             grid-column: 1/3;
             @media screen and (max-width: 768px){
                 margin-bottom: 4px;
+                input::placeholder{
+                    text: fool bar;
+                }
             }
         `;
     }
@@ -40,7 +43,9 @@ const getId = (id) => {
                 margin: 4px 0 4px 0;
                 grid-column: 1/3;
                 grid-row: 3;
-                document.getElementById(password).placeholder='';
+                input::placeholder {
+                    color: white;
+                  }
             }
         `;
     }

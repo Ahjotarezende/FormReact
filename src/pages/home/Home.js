@@ -4,13 +4,15 @@ import ImgLogo from '../../assets/logo.png'
 import Input from '../../Components/input/input'
 import Button from '../../Components/button/button'
 import CheckBox from '../../Components/checkbox/checkbox'
+import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
+  let navigate=useNavigate();
   return (
     <Background>
         <Logo src={ImgLogo}/>
         <MainTitle>Intern Sign Up</MainTitle>
-        <Formulario>
+        <Formulario onSubmit={() => {navigate("/sucess")}}>
             <Input id="Fullname" name='name' type="text" placeholder="Name" label="Full Name *"/>
 
             <Input id="Email" name="email" type="email" placeholder="foo@bar.com" label="Email *"/>
@@ -23,7 +25,7 @@ const Home = () => {
             
             <CheckBox id="Check" name="check" type="checkbox"/>
 
-            <Button id="bt1"/>
+            <Button type="submit" id="bt1"/>
         </Formulario>
     </Background>
   )

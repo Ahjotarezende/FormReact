@@ -4,8 +4,8 @@ import Sucess from './pages/sucess/Sucess'
 
 function App() {
   return (
-      <Sucess />,
-      <Home />
+      <Home />,
+      <Sucess />
   );
 }
 
