@@ -29,6 +29,9 @@ const ButtonRegister = styled.button`
         height: 3.5rem;
         margin-top: 25px;
     }
+    @media screen and (max-width: 376px){
+        margin-top: 1rem;
+    }
 `;
 
 const ButtonSucess = styled.button`

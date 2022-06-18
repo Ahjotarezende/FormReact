@@ -16,6 +16,15 @@ export const Background = styled.div`
         margin: 0;
         align-items: center;
     }
+    @media screen and (max-width: 376px){
+        padding: 0;
+    }
+    @media screen and (max-height: 816px){
+        margin: 4rem auto 0 auto;
+    }
+    @media screen and (max-height: 668px){
+        margin:0;
+    }
 `;
 
 export const Logo = styled.img`
@@ -24,12 +33,23 @@ export const Logo = styled.img`
     @media screen and (max-width: 768px){
         margin: 5.31rem auto 0 auto;
     }
+    @media screen and (max-width: 415px){
+        margin: 4rem auto 0 auto;
+    }
+    @media screen and (max-width: 376px){
+        margin: 1rem auto 0 auto;
+        max-width: 180px;
+    }
 `;
 
 export const MainTitle = styled.h1`
     margin-bottom: 1.81rem;
     @media screen and (max-width: 768px){
         margin-bottom: 2.5rem;
+    }
+    @media screen and (max-width: 376px){
+        margin-bottom: 0.5rem;
+        margin-top: 0;
     }
 `;
 
@@ -45,5 +65,8 @@ export const Formulario = styled.form`
         grid-template-rows: repeat(6, 0.16fr);
         column-gap: 0.8125rem;
         padding: 0;
+    }
+    @media screen and (max-width: 620px){
+        padding: 0 20px;
     }
 `;

@@ -14,6 +14,9 @@ const ContainerCheck = styled.div`
         row-gap: 0;
         height: 50px;
     }
+    @media screen and (max-width: 376px){
+        margin-top: 1rem;
+    }
 `;
 const HiddenCheckbox = styled.input.attrs({type: 'checkbox'})`
     overflow: hidden;
