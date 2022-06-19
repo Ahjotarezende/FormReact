@@ -90,7 +90,7 @@ const InputField = styled.input`
 `;
 
 const ErrorMessage = styled.p`
-    //display: none;
+    display: none;
     text-align: left;
     font-size: 0.89rem;
     color: red;

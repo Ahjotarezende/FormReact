@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { ContainerCheck, HiddenCheckbox, Text, Check, TextError } from "./checkbox.styled";
 import CheckIcon from '../../assets/check-solid.svg';
 
-const CheckBox = ({ id, type, name }) => {
+const CheckBox = ({ id, type, name, register }) => {
     const [checked, setChecked] = useState(false);
     function handleCheckboxChange() {
         setChecked(!checked);
     }
     return (
         <ContainerCheck checked={checked} onClick={handleCheckboxChange}>
-            <HiddenCheckbox onChange={handleCheckboxChange} checked={checked} />
+            <HiddenCheckbox {...register(name, {required:  true})} onChange={handleCheckboxChange} checked={checked} />
             
             <Check checked={checked}><img alt="tick icon" style={{width: '15px'}} src={CheckIcon}/></Check>
             
