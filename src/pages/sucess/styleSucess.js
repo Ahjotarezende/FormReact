@@ -8,12 +8,11 @@ export const Logo = styled.img`
 export const Background = styled.div`
     background-color: white;
     width: 38.5rem;
-    height: 47rem;
+    height: 49.8rem;
     margin: 4rem auto;
     border: none;
     border-radius: 20px;
     text-align: center;
-    padding-bottom: 50px;
     @media screen and (max-width: 768px){
         height: 46rem;
     }
