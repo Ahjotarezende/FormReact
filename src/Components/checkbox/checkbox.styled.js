@@ -50,7 +50,6 @@ const Check = styled.label`
 `;
 
 const TextError = styled.p`
-    display: none;
     grid-row: 2;
     grid-column: 1/3;
     text-align: left;

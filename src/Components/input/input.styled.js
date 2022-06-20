@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const getId = (id) => {
-    if(id==="name"){
+    if(id==="Fullname"){
         return`
             grid-column: 1/3;
             @media screen and (max-width: 768px){
@@ -12,7 +12,7 @@ const getId = (id) => {
             }
         `;
     }
-    else if(id==="email"){
+    else if(id==="Email"){
         return`
             grid-column: 1/2;
             margin-top: 18px;
@@ -23,7 +23,7 @@ const getId = (id) => {
             }
         `;
     }
-    else if(id==="phone"){
+    else if(id==="Phone"){
         return`
             margin-top: 17px;
             grid-row: 2/3;
@@ -35,7 +35,7 @@ const getId = (id) => {
             }
         `;
     }
-    else if(id==="password"){
+    else if(id==="Password"){
         return`
             margin-top: 31px;
             grid-column: 1/2;
@@ -49,7 +49,7 @@ const getId = (id) => {
             }
         `;
     }
-    else if(id==="age"){
+    else if(id==="Age"){
         return`
             margin-top: 31px;
             grid-column: 2/3;
@@ -90,7 +90,6 @@ const InputField = styled.input`
 `;
 
 const ErrorMessage = styled.p`
-    display: none;
     text-align: left;
     font-size: 0.89rem;
     color: red;
